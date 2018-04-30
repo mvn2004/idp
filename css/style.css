@@ -27,18 +27,18 @@ header {
 header img {
     margin-top: 20px;
     /*height: 50px;
-    width: 50px;
-    position: fixed;
-    top: 9px;
-    left: 9px;
-    border: 1px solid #cccccc;
-    border-radius: 50%;
-    z-index: 1;*/
+		width: 50px;
+		position: fixed;
+		top: 9px;
+		left: 9px;
+		border: 1px solid #cccccc;
+		border-radius: 50%;
+	z-index: 1;*/
 }
 
 header img:hover {
     /*background-color: #FFFF00;
-    border: 1px solid #1351B4;*/
+	border: 1px solid #1351B4;*/
 }
 
 .operator {
@@ -138,7 +138,7 @@ ol {
     padding-left: 5%;
     font-style: italic;
     /*text-decoration: underline;
-    /* Подчеркивание заголовка */
+	/* Подчеркивание заголовка */
     /*list-style-type: none; /* Убираем исходные маркеры */
     /*counter-reset: item; /* Обнуляем счетчик списка */
 }
@@ -162,7 +162,7 @@ ol ol li:before {
 
 .grafik {
     /*border-top: 0;
-    border: 1px solid #636363;*/
+	border: 1px solid #636363;*/
     background-color: #FEF8E3;
     text-align: center;
     width: 100%;
