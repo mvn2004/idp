@@ -186,7 +186,8 @@ ol ol li:before {
     height: 50px;
 }
 
-.links img:hover {
+.links img:hover,
+.operator img:hover {
     padding-top: 10px;
     padding-bottom: 10px;
     -webkit-transform: scale(1.2);
@@ -194,7 +195,7 @@ ol ol li:before {
     transform: scale(1.2);
 }
 
-< a:link {
+a:link {
     color: #0000FF;
 }
 
