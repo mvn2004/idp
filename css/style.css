@@ -91,6 +91,20 @@ td {
     text-align: center;
 }
 
+.photoI span {
+    position: absolute;
+    visibility: hidden;
+    width: 0%;
+    z-index: 2;
+    transform: scale(0);
+}
+
+.photoI:hover span {
+    visibility: visible;
+	transform: scale(1);
+	transition: transform 0.5s linear;
+}
+
 .formatDate {
     font-size: 14px;
     padding-top: 10px;
@@ -110,6 +124,21 @@ td {
 
 .red {
     color: #C53929;
+}
+
+.cto span {
+    left: 150px;
+    position: absolute;
+    visibility: hidden;
+    width: 0%;
+    z-index: 3;
+    opacity: 0;
+}
+
+.cto:hover span {
+    visibility: visible;
+    opacity: 1;
+	transition: opacity 0.5s linear;
 }
 
 ul {
@@ -181,6 +210,15 @@ ol ol li:before {
     align-items: center;
 }
 
+.links span {
+    font-size: 14px;
+}
+
+.links span:hover {
+	font-size: 16px;
+	transition: font-size 0.5s linear;
+}
+
 .links img {
     width: 50px;
     height: 50px;
@@ -193,6 +231,7 @@ ol ol li:before {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
+	transition: transform 0.5s linear;
 }
 
 a:link {
