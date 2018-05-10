@@ -6,8 +6,13 @@
     <!-- Мета-теги для браузеров http-equiv:
     <meta http-equiv="refresh" content="4; url=https://www.google.com.ua/"> переброска через 4с на страницу Google;
     <meta http-equiv="pragma" content="no-cache"> запрет кэширования страницы; -->
-	<!--[if lt IE 9]>      
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <!--[if lt IE 9]>
+        <script>
+            var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
+                for (var i = 0; i < e.length; i++) {
+                document.createElement(e[i]);
+                }
+        </script>
 	<![endif]-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -40,12 +45,12 @@
                 <td class="cell"><a name="#photoI" href="#photoI" class="photoI">Миронович В.Н.<span><img src="images/photoI.png" alt="photoI"></span></a></td>
                 <td class="cell">Инженер-программист</td>
                 <td>
-					<ul class="metods">
-						<li>Поддержка существующих конфигураций 1С (<a href="http://www.diklz.gov.ua/" target="_blank">ДСКН</a>).</li>
-						<li>Создание новых конфигураций 1С (<a href="images/oncology.png" target="_blank">Онкология</a>).</li>
-						<li><a href="https://docs.google.com/spreadsheets/d/1IMVhBlesTbrnkA_hKHXxn5UBixnTDYtRaW1I57S5Lnw/edit#gid=0" target="_blank">Создание демобаз на Jenkins</a> (<a href="http://medstar.ua/ehealth/" target="_blank">eHealth</a>).</li>
-					</ul>
-				</td>
+                    <ul class="metods">
+                        <li>Поддержка существующих конфигураций 1С (<a href="http://www.diklz.gov.ua/" target="_blank">ДСКН</a>).</li>
+                        <li>Создание новых конфигураций 1С (<a href="images/oncology.png" target="_blank">Онкология</a>).</li>
+                        <li><a href="https://docs.google.com/spreadsheets/d/1IMVhBlesTbrnkA_hKHXxn5UBixnTDYtRaW1I57S5Lnw/edit#gid=0" target="_blank">Создание демобаз на Jenkins</a> (<a href="http://medstar.ua/ehealth/" target="_blank">eHealth</a>).</li>
+                    </ul>
+                </td>
                 <td class="cell">Ст. инженер-программист</td>
                 <td>Web-разработка (front-end &amp; back-end developer)</td>
             </tr>
@@ -69,7 +74,8 @@
             <tr class="rowD">
                 <td class="cell">1</td>
                 <td>Изучение <a href="http://htmlbook.ru/" target="_blank">HTML&amp;CSS</a></td>
-                <td class="cell cellDate">28.02.2018</td> <!-- <input type="date" name="calendar" max="2018-12-31" min="2018-01-01"> -->
+                <td class="cell cellDate">28.02.2018</td>
+                <!-- <input type="date" name="calendar" max="2018-12-31" min="2018-01-01"> -->
                 <td>Знание основ HTML&amp;CSS и фреймворков для применения в web-разработке:<br>
                     <ul class="certificate">
                         <li><a href="https://geekbrains.ru/certificates/274809#" target="_blank">сертификат по курсу "Ознакомительный урок HTML/CSS. Основы создания сайтов"</a>;</li>
@@ -124,9 +130,9 @@
                 <td class="cell cellDate">31.03.2018</td>
                 <td>Навыки работы с CMS для применения в web-разработке:<br>
                     <ul class="certificate">
-						<li><a href="https://geekbrains.ru/go/-21B3F" target="_blank">сертификат по курсу "Как создать личный блог: курс "Создание блога на Wordpress"</a>;</li>	
+                        <li><a href="https://geekbrains.ru/go/-21B3F" target="_blank">сертификат по курсу "Как создать личный блог: курс "Создание блога на Wordpress"</a>;</li>
                         <li><a href="https://mvn2004.wordpress.com/" target="_blank">пример сайта на Wordpress за час</a>;</li>
-						<li><a href="http://o935826i.beget.tech/" target="_blank">пример создания блога на Wordpress</a>.</li>
+                        <li><a href="http://o935826i.beget.tech/" target="_blank">пример создания блога на Wordpress</a>.</li>
                     </ul>
                 </td>
                 <td class="cell"><a name="#cto2" href="#cto2" class="cto" title="CTO">Белых И.Ю.<span><img src="images/cto.jpg" alt="cto"></span></a></td>
@@ -308,7 +314,7 @@
 
         </script> Миронович В.Н.
     </footer>
-	<script src="js/changeColor.js"></script>
+    <script src="js/changeColor.js"></script>
 </body>
 
 </html>
