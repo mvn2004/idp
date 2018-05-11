@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic');
 
 body {
-	margin: 0;
-	padding: 0;
-	min-width: 1238px;
-	/*max-width: 1400px;*/
-	/*background-color: #FEF8E3;*/
-	font-family: Roboto, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-width: 1238px;
+    /*max-width: 1400px;*/
+    /*background-color: #FEF8E3;*/
+    font-family: Roboto, sans-serif;
 }
 
 #hours {
-	font: bold 16px Roboto, sans-serif;
-	color: #CC0001;
-	/*text-decoration: underline;*/
-	position: absolute;
-	top: 5px;
-	right: 5px;
+    font: bold 16px Roboto, sans-serif;
+    color: #CC0001;
+    /*text-decoration: underline;*/
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }
 
 header {
@@ -50,13 +50,13 @@ header img:hover {
 
 .operator:hover {
     opacity: 1;
-	transition: opacity 0.3s linear;
+    transition: opacity 0.3s linear;
 }
 
 header h2 {
     color: #4A86E8;
     text-align: center;
-	text-shadow: 2px 1px 3px rgba(0,0,0,0.3);
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
 }
 
 table {
@@ -91,6 +91,40 @@ td {
     text-align: center;
 }
 
+.post__item {
+    list-style: none;
+    position: relative;
+}
+
+.post__item .post__link {
+    text-decoration: none;
+    cursor: pointer;
+    color: #0000FF;
+    margin: 2px;
+}
+
+.post__item .menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    text-align: left;
+}
+
+.post__item .menu .menu__link {
+    background-color: rgba(248, 199, 111, 0.4);
+    padding: 6px 25px;
+    display: block;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.post__item .menu .menu__link:hover {
+    background-color: #F8C76F;
+    color: #800000;
+    box-shadow: 1px 5px 10px -5px black;
+    transition: all 0.3s ease;
+}
+
 .photoI span {
     position: absolute;
     visibility: hidden;
@@ -101,8 +135,8 @@ td {
 
 .photoI:hover span {
     visibility: visible;
-	transform: scale(1);
-	transition: transform 0.5s linear;
+    transform: scale(1);
+    transition: transform 0.5s linear;
 }
 
 .formatDate {
@@ -138,7 +172,7 @@ td {
 .cto:hover span {
     visibility: visible;
     opacity: 1;
-	transition: opacity 0.5s linear;
+    transition: opacity 0.5s linear;
 }
 
 ul {
@@ -215,8 +249,8 @@ ol ol li:before {
 }
 
 .links span:hover {
-	font-size: 16px;
-	transition: font-size 0.5s linear;
+    font-size: 16px;
+    transition: font-size 0.5s linear;
 }
 
 .links img {
@@ -231,7 +265,7 @@ ol ol li:before {
     -webkit-transform: scale(1.2);
     -ms-transform: scale(1.2);
     transform: scale(1.2);
-	transition: transform 0.5s linear;
+    transition: transform 0.5s linear;
 }
 
 a:link {
@@ -252,7 +286,7 @@ a:active {
 
 a {
     text-decoration: none;
-	transition: color 0.5s linear;
+    transition: color 0.5s linear;
 }
 
 footer {
