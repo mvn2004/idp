@@ -42,7 +42,7 @@ header img:hover {
 }
 
 .operator {
-    background-color: #4A86E8;
+    background: #4A86E8;
     position: fixed;
     top: 420px;
     left: 0;
@@ -51,7 +51,7 @@ header img:hover {
 
 .operator:hover {
     opacity: 1;
-    box-shadow: 0 0 10px 2px #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     transform: scale(1.1);
     transition: all 0.3s linear;
 }
@@ -59,7 +59,7 @@ header img:hover {
 header h2 {
     color: #4A86E8;
     text-align: center;
-    text-shadow: 2px 1px 3px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 table {
@@ -74,14 +74,14 @@ td {
 }
 
 .rowH {
-    background-color: #F8C76F;
+    background: #F8C76F;
     /*background-color: #FFFF00;*/
     color: #4A86E8;
     font-size: 15px;
 }
 
 .rowD {
-    background-color: #FEF8E3;
+    background: #FEF8E3;
     font-size: 14px;
     vertical-align: top;
 }
@@ -106,8 +106,8 @@ td {
 }
 
 .post .post__menu .menu {
-    display: none;
-    /*opacity: 0;*/
+    /*display: none;*/
+    opacity: 0;
     position: absolute;
     list-style: none;
     text-align: left;
@@ -116,12 +116,18 @@ td {
 
 .post .post__menu:hover .menu {
     top: 15px;
-    display: block;
-    /*opacity: 1;*/
+    left: -2px;
+    /*display: block;*/
+    opacity: 1;
+    transition: opacity 0.3s linear;
+}
+
+.post .post__menu .menu .menu__item:first-child {
+    border-bottom: 1px solid #FEF8E3;
 }
 
 .post .post__menu .menu .menu__link {
-    background-color: rgba(248, 199, 111, 0.4);
+    background: rgba(248, 199, 111, 0.4);
     padding: 6px 25px;
     display: block;
     text-decoration: none;
@@ -130,7 +136,7 @@ td {
 
 .post .post__menu .menu .menu__link:hover {
     padding: 8px 20px 8px 30px;
-    background-color: #F8C76F;
+    background: #F8C76F;
     color: #800000;
     box-shadow: 1px 5px 10px -5px #000;
     transition: all 0.3s ease;
@@ -237,7 +243,7 @@ ol ol li:before {
 .grafik {
     /*border-top: 0;
 	border: 1px solid #636363;*/
-    background-color: #FEF8E3;
+    background: #FEF8E3;
     text-align: center;
     width: 100%;
 }
@@ -297,7 +303,7 @@ a {
 }
 
 footer {
-    background-color: #F8C76F;
+    background: #F8C76F;
     /*background-color: #FFFF00;*/
     height: 80px;
     /*margin-top: 3%;*/
