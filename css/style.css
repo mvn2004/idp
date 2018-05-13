@@ -42,6 +42,7 @@ header img:hover {
 }
 
 .operator {
+    background-color: #4A86E8;
     position: fixed;
     top: 420px;
     left: 0;
@@ -50,7 +51,9 @@ header img:hover {
 
 .operator:hover {
     opacity: 1;
-    transition: opacity 0.3s linear;
+    box-shadow: 0 0 10px 2px #000;
+    transform: scale(1.1);
+    transition: all 0.3s linear;
 }
 
 header h2 {
@@ -91,26 +94,33 @@ td {
     text-align: center;
 }
 
-.post__item {
+.post {
     list-style: none;
-    position: relative;
 }
 
-.post__item .post__link {
+.post__menu {
+    position: relative;
     text-decoration: none;
     cursor: pointer;
     color: #0000FF;
-    margin: 2px;
 }
 
-.post__item .menu {
+.post .post__menu .menu {
     display: none;
+    /*opacity: 0;*/
     position: absolute;
     list-style: none;
     text-align: left;
+    top: -9999em;
 }
 
-.post__item .menu .menu__link {
+.post .post__menu:hover .menu {
+    top: 15px;
+    display: block;
+    /*opacity: 1;*/
+}
+
+.post .post__menu .menu .menu__link {
     background-color: rgba(248, 199, 111, 0.4);
     padding: 6px 25px;
     display: block;
@@ -118,10 +128,11 @@ td {
     transition: all 0.3s ease;
 }
 
-.post__item .menu .menu__link:hover {
+.post .post__menu .menu .menu__link:hover {
+    padding: 8px 20px 8px 30px;
     background-color: #F8C76F;
     color: #800000;
-    box-shadow: 1px 5px 10px -5px black;
+    box-shadow: 1px 5px 10px -5px #000;
     transition: all 0.3s ease;
 }
 
@@ -250,7 +261,7 @@ ol ol li:before {
 
 .links span:hover {
     font-size: 16px;
-    transition: font-size 0.5s linear;
+    transition: font-size 0.3s linear;
 }
 
 .links img {
@@ -258,14 +269,10 @@ ol ol li:before {
     height: 50px;
 }
 
-.links img:hover,
-.operator img:hover {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
+.links img:hover {
+    padding: 10px 0;
     transform: scale(1.2);
-    transition: transform 0.5s linear;
+    transition: transform 0.3s linear;
 }
 
 a:link {
