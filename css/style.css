@@ -73,6 +73,10 @@ td {
     padding: 10px;
 }
 
+td:hover {
+    background-color: rgba(248, 199, 111, 0.4);
+}
+
 .rowH {
     background-color: #F8C76F;
     /*background-color: #FFFF00;*/
