@@ -42,7 +42,7 @@ header img:hover {
 }
 
 .operator {
-    background: #4A86E8;
+    background-color: #4A86E8;
     position: fixed;
     top: 420px;
     left: 0;
@@ -74,14 +74,14 @@ td {
 }
 
 .rowH {
-    background: #F8C76F;
+    background-color: #F8C76F;
     /*background-color: #FFFF00;*/
     color: #4A86E8;
     font-size: 15px;
 }
 
 .rowD {
-    background: #FEF8E3;
+    background-color: #FEF8E3;
     font-size: 14px;
     vertical-align: top;
 }
@@ -127,7 +127,7 @@ td {
 }
 
 .post .post__menu .menu .menu__link {
-    background: rgba(248, 199, 111, 0.4);
+    background-color: rgba(248, 199, 111, 0.4);
     padding: 6px 25px;
     display: block;
     text-decoration: none;
@@ -136,7 +136,7 @@ td {
 
 .post .post__menu .menu .menu__link:hover {
     padding: 8px 20px 8px 30px;
-    background: #F8C76F;
+    background-color: #F8C76F;
     color: #800000;
     box-shadow: 1px 5px 10px -5px #000;
     transition: all 0.3s ease;
@@ -243,7 +243,7 @@ ol ol li:before {
 .grafik {
     /*border-top: 0;
 	border: 1px solid #636363;*/
-    background: #FEF8E3;
+    background-color: #FEF8E3;
     text-align: center;
     width: 100%;
 }
@@ -303,7 +303,7 @@ a {
 }
 
 footer {
-    background: #F8C76F;
+    background-color: #F8C76F;
     /*background-color: #FFFF00;*/
     height: 80px;
     /*margin-top: 3%;*/
