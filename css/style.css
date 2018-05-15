@@ -258,6 +258,12 @@ ol ol li:before {
     width: 100%;
 }
 
+.grafik:hover {
+    border: 1px solid #800000;
+    border-top: none;
+    box-sizing: border-box;
+}
+
 .links {
     height: 80px;
     font-size: 14px;
