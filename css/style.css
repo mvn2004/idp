@@ -103,13 +103,19 @@ td:hover {
 }
 
 .post__menu {
+    color: #0000FF;
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    color: #0000FF;
 }
 
-.post .post__menu .menu {
+.post__menu:hover {
+    color: #800000;
+    transition: color 0.5s linear;
+}
+
+.post__menu .menu {
+    color: #800000;
     /*display: none;*/
     opacity: 0;
     position: absolute;
@@ -118,7 +124,7 @@ td:hover {
     top: -9999em;
 }
 
-.post .post__menu:hover .menu {
+.post__menu:hover .menu {
     top: 15px;
     left: -2px;
     /*display: block;*/
@@ -126,11 +132,11 @@ td:hover {
     transition: opacity 0.3s linear;
 }
 
-.post .post__menu .menu .menu__item:first-child {
+.post__menu .menu .menu__item:first-child {
     border-bottom: 1px solid #FEF8E3;
 }
 
-.post .post__menu .menu .menu__link {
+.post__menu .menu .menu__link {
     background-color: rgba(248, 199, 111, 0.4);
     padding: 6px 25px;
     display: block;
@@ -287,6 +293,8 @@ ol ol li:before {
 
 a:link {
     color: #0000FF;
+    text-decoration: none;
+    transition: color 0.5s linear;
 }
 
 a:vizited {
@@ -299,11 +307,6 @@ a:hover {
 
 a:active {
     color: #008000;
-}
-
-a {
-    text-decoration: none;
-    transition: color 0.5s linear;
 }
 
 footer {
