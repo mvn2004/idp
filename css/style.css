@@ -51,7 +51,7 @@ header img:hover {
 
 .operator:hover {
     opacity: 1;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     transform: scale(1.1);
     transition: all 0.3s linear;
 }
@@ -256,6 +256,10 @@ ol ol li:before {
     background-color: #FEF8E3;
     text-align: center;
     width: 100%;
+}
+
+.grafik a {
+    display: block;
 }
 
 .grafik:hover {
