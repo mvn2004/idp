@@ -9,11 +9,15 @@ body {
 
 #hours {
     font: bold 16px Roboto, sans-serif;
-    color: #CC0001;
+    color: #FA5F20;
     position: absolute;
     top: 5px;
     right: 5px;
     transition: all 0.3s ease;
+}
+
+#hours:hover {
+    color: #CC0001;
 }
 
 header {
@@ -48,10 +52,8 @@ header h2 {
     transition: all 0.3s ease;
 }
 
-#hours:hover,
 header h2:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    transform: translate(-3px, -3px);
+    color: #435F88;
 }
 
 table {
@@ -69,6 +71,12 @@ td {
 td:hover {
     background-color: rgba(248, 199, 111, 0.4);
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#hours:hover,
+header h2:hover,
+td:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translate(-3px, -3px);
 }
 
@@ -247,11 +255,12 @@ ol {
 
 .links span {
     font-size: 14px;
-    transition: font-size 0.3s linear;
+    transition: all 0.3s linear;
 }
 
 .links span:hover {
     font-size: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .links img {
@@ -268,7 +277,7 @@ ol {
 a:link {
     color: #0000FF;
     text-decoration: none;
-    transition: color 0.5s linear;
+    transition: color 0.3s linear;
 }
 
 a:vizited {
