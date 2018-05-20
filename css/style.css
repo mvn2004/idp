@@ -30,7 +30,7 @@ header img {
     margin-top: 20px;
 }
 
-.operator {
+.operator img {
     background-color: #4A86E8;
     position: fixed;
     z-index: 1;
@@ -40,7 +40,7 @@ header img {
     transition: all 0.3s ease;
 }
 
-.operator:hover {
+.operator img:hover {
     opacity: 1;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
