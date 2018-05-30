@@ -13,7 +13,7 @@ body {
     position: absolute;
     top: 5px;
     right: 5px;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 #hours:hover {
@@ -37,7 +37,7 @@ header img {
     top: 420px;
     left: 0;
     opacity: 0.5;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 .operator img:hover {
@@ -49,7 +49,7 @@ header img {
 header h2 {
     color: #4A86E8;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 header h2:hover {
@@ -65,7 +65,7 @@ th,
 td {
     border: 1px solid #111111;
     padding: 10px;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 td:hover {
@@ -109,7 +109,7 @@ td:hover {
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    transition: color 0.3s linear;
+    transition: color 0.3s;
 }
 
 .post__menu:hover {
@@ -123,7 +123,7 @@ td:hover {
     list-style: none;
     text-align: left;
     top: -9999em;
-    transition: opacity 0.3s linear;
+    transition: opacity 0.3s;
 }
 
 .post__menu:hover .menu {
@@ -141,7 +141,7 @@ td:hover {
     padding: 6px 25px;
     display: block;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 .post .post__menu .menu .menu__link:hover {
@@ -151,19 +151,19 @@ td:hover {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.photoI span {
+.photoI img {
     position: absolute;
     visibility: hidden;
     left: 0;
     top: 100px;
     z-index: 2;
     transform: scale(0);
-    transition: all 0.5s ease;
 }
 
-.photoI:hover span {
+.photoI:hover img {
     visibility: visible;
     transform: scale(1);
+    transition: all 0.5s;
 }
 
 .formatDate {
@@ -195,7 +195,7 @@ td:hover {
     width: 0%;
     z-index: 3;
     opacity: 0;
-    transition: all 0.5s ease;
+    transition: all 0.5s;
 }
 
 .cto:hover span {
@@ -230,7 +230,7 @@ ol {
     background-color: #FEF8E3;
     text-align: center;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.3s;
 }
 
 .grafik > a {
@@ -255,7 +255,7 @@ ol {
 
 .links span {
     font-size: 14px;
-    transition: all 0.3s linear;
+    transition: all 0.3s;
 }
 
 .links span:hover {
@@ -266,7 +266,7 @@ ol {
 .links img {
     width: 50px;
     height: 50px;
-    transition: transform 0.3s linear;
+    transition: transform 0.3s ease;
 }
 
 .links img:hover {
@@ -277,7 +277,7 @@ ol {
 a:link {
     color: #0000FF;
     text-decoration: none;
-    transition: color 0.3s linear;
+    transition: color 0.3s;
 }
 
 a:vizited {
