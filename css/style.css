@@ -158,12 +158,12 @@ td:hover {
     top: 100px;
     z-index: 2;
     transform: scale(0);
+    transition: transform 0.5s linear;
 }
 
 .photoI:hover img {
     visibility: visible;
     transform: scale(1);
-    transition: all 0.5s;
 }
 
 .formatDate {
@@ -195,7 +195,7 @@ td:hover {
     width: 0%;
     z-index: 3;
     opacity: 0;
-    transition: all 0.5s;
+    transition: all 0.5s linear;
 }
 
 .cto:hover span {
