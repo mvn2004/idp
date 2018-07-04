@@ -7,19 +7,6 @@ body {
     font-family: Roboto, sans-serif;
 }
 
-#hours {
-    font: bold 16px Roboto, sans-serif;
-    color: #FA5F20;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    transition: all 0.3s;
-}
-
-#hours:hover {
-    color: #CC0001;
-}
-
 header {
     height: 420px;
     width: 100%;
@@ -28,6 +15,29 @@ header {
 
 header img {
     margin-top: 20px;
+}
+
+header #hours {
+    font: bold 16px Roboto, sans-serif;
+    color: #FA5F20;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    transition: all 0.3s;
+}
+
+header #hours:hover {
+    color: #CC0001;
+}
+
+header h2 {
+    color: #4A86E8;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+header h2:hover {
+    color: #435F88;
 }
 
 .operator img {
@@ -44,16 +54,6 @@ header img {
     opacity: 1;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
-}
-
-header h2 {
-    color: #4A86E8;
-    text-align: center;
-    transition: all 0.3s;
-}
-
-header h2:hover {
-    color: #435F88;
 }
 
 table {
@@ -73,7 +73,7 @@ td:hover {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-#hours:hover,
+header #hours:hover,
 header h2:hover,
 td:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
@@ -292,7 +292,7 @@ a:active {
     color: #008000;
 }
 
-footer {
+footer .copyright {
     background-color: #F8C76F;
     height: 80px;
     font-weight: bold;
