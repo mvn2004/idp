@@ -17,7 +17,7 @@ header img {
     margin-top: 20px;
 }
 
-header #hours {
+#hours {
     font: bold 16px Roboto, sans-serif;
     color: #FA5F20;
     position: absolute;
@@ -26,21 +26,21 @@ header #hours {
     transition: all 0.3s;
 }
 
-header #hours:hover {
+#hours:hover {
     color: #CC0001;
 }
 
-header h2 {
+h2 {
     color: #4A86E8;
     text-align: center;
     transition: all 0.3s;
 }
 
-header h2:hover {
+h2:hover {
     color: #435F88;
 }
 
-.operator img {
+aside img {
     background-color: #4A86E8;
     position: fixed;
     z-index: 1;
@@ -50,7 +50,7 @@ header h2:hover {
     transition: all 0.3s;
 }
 
-.operator img:hover {
+aside img:hover {
     opacity: 1;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
     transform: scale(1.1);
@@ -73,27 +73,23 @@ td:hover {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-header #hours:hover,
-header h2:hover,
+#hours:hover,
+h2:hover,
 td:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translate(-3px, -3px);
 }
 
-.rowH {
+tr > th {
     background-color: #F8C76F;
     color: #4A86E8;
     font-size: 15px;
 }
 
-.rowD {
+tr > td {
     background-color: #FEF8E3;
     font-size: 14px;
     vertical-align: top;
-}
-
-.name {
-    width: 100px;
 }
 
 .cell {
@@ -144,7 +140,7 @@ td:hover {
     transition: all 0.3s;
 }
 
-.post .post__menu .menu .menu__link:hover {
+.post__menu .menu .menu__link:hover {
     padding: 8px 20px 8px 30px;
     background-color: #F8C76F;
     color: #800000;
@@ -188,7 +184,7 @@ td:hover {
 }
 
 .cto span {
-    left: -640px;
+    left: -580px;
     top: -2px;
     position: absolute;
     visibility: hidden;
@@ -210,9 +206,14 @@ ul {
     font-style: normal;
 }
 
+ul.project {
+    padding-top: 5px;
+    padding-left: 5%;
+}
+
 ul.certificate {
     padding-top: 5px;
-    padding-left: 7%;
+    padding-left: 4%;
 }
 
 ul.metods {
