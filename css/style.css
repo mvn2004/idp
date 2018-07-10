@@ -61,6 +61,18 @@ table {
     width: 100%;
 }
 
+th {
+    background-color: #F8C76F;
+    color: #4A86E8;
+    font-size: 15px;
+}
+
+td {
+    background-color: #FEF8E3;
+    font-size: 14px;
+    vertical-align: top;
+}
+
 th,
 td {
     border: 1px solid #111111;
@@ -68,32 +80,63 @@ td {
     transition: all 0.3s;
 }
 
+th:hover {
+    background-color: rgba(220, 130, 0, 0.4);
+    color: #435F88;
+}
+
 td:hover {
     background-color: rgba(248, 199, 111, 0.4);
+}
+
+th:hover,
+td:hover {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 #hours:hover,
 h2:hover,
+th:hover,
 td:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     transform: translate(-3px, -3px);
 }
 
-tr > th {
-    background-color: #F8C76F;
-    color: #4A86E8;
-    font-size: 15px;
-}
-
-tr > td {
-    background-color: #FEF8E3;
-    font-size: 14px;
-    vertical-align: top;
-}
-
 .cell {
     text-align: center;
+}
+
+a:link {
+    color: #0000FF;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:vizited {
+    color: #FAA21A;
+}
+
+a:hover {
+    color: #800000;
+}
+
+a:active {
+    color: #008000;
+}
+
+.photoI img {
+    left: 0;
+    top: 100px;
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+    transform: scale(0);
+    transition: transform 0.5s linear;
+}
+
+.photoI:hover img {
+    visibility: visible;
+    transform: scale(1);
 }
 
 .post {
@@ -147,21 +190,6 @@ tr > td {
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
-.photoI img {
-    position: absolute;
-    visibility: hidden;
-    left: 0;
-    top: 100px;
-    z-index: 2;
-    transform: scale(0);
-    transition: transform 0.5s linear;
-}
-
-.photoI:hover img {
-    visibility: visible;
-    transform: scale(1);
-}
-
 .formatDate {
     font-size: 14px;
     padding-top: 10px;
@@ -169,6 +197,15 @@ tr > td {
     display: flex;
     justify-content: space-around;
     align-items: center;
+}
+
+.formatDate > p {
+    transition: all 0.3s;
+}
+
+.formatDate > p:hover {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(-3px, -3px);
 }
 
 .green {
@@ -187,9 +224,9 @@ tr > td {
     left: -580px;
     top: -2px;
     position: absolute;
-    visibility: hidden;
     width: 0%;
     z-index: 3;
+    visibility: hidden;
     opacity: 0;
     transition: all 0.5s linear;
 }
@@ -275,24 +312,6 @@ ol {
     transform: scale(1.2);
 }
 
-a:link {
-    color: #0000FF;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-a:vizited {
-    color: #FAA21A;
-}
-
-a:hover {
-    color: #800000;
-}
-
-a:active {
-    color: #008000;
-}
-
 footer .copyright {
     background-color: #F8C76F;
     height: 80px;
@@ -301,4 +320,14 @@ footer .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+footer .copyright span {
+    transition: all 0.3s;
+}
+
+footer .copyright span:hover {
+    color: #435F88;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translate(-3px, -3px);
 }
