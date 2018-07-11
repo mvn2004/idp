@@ -244,17 +244,14 @@ ul {
 }
 
 ul.project {
-    padding-top: 5px;
     padding-left: 5%;
 }
 
 ul.certificate {
-    padding-top: 5px;
-    padding-left: 4%;
+    padding: 5px 0 0 4%;
 }
 
 ul.metods {
-    padding-top: 5px;
     padding-left: 6%;
 }
 
