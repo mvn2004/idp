@@ -81,12 +81,14 @@ td {
 }
 
 th:hover {
-    background-color: rgba(220, 130, 0, 0.4);
+    /*background-color: rgba(220, 130, 0, 0.4);*/
+    background: radial-gradient(at center, rgba(248, 199, 111, 0.4), #F8C76F);
     color: #435F88;
 }
 
 td:hover {
-    background-color: rgba(248, 199, 111, 0.4);
+    /*background-color: rgba(248, 199, 111, 0.4);*/
+    background: radial-gradient(at center, #FEF8E3, rgba(248, 199, 111, 0.4));
 }
 
 th:hover,
@@ -301,7 +303,7 @@ ol {
 .links img {
     width: 50px;
     height: 50px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s;
 }
 
 .links img:hover {
@@ -317,6 +319,11 @@ footer .copyright {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s;
+}
+
+footer .copyright:hover {
+    background: radial-gradient(at center, rgba(248, 199, 111, 0.4), #F8C76F);
 }
 
 footer .copyright span {
