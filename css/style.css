@@ -179,23 +179,23 @@ a:active {
 
 .post__menu .menu .menu__link {
     background-color: rgba(248, 199, 111, 0.4);
-    padding: 6px 25px;
+    padding: 6px 26px;
     display: block;
     text-decoration: none;
     transition: all 0.3s;
+    text-indent: 0;
 }
 
 .post__menu .menu .menu__link:hover {
-    padding: 8px 20px 8px 30px;
+    padding: 8px 20px 8px 32px;
     background-color: #F8C76F;
     color: #800000;
     box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
 }
 
 .formatDate {
+    padding: 10px 0;
     font-size: 14px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -261,6 +261,17 @@ ol {
     margin: 0;
     padding-left: 5%;
     font-style: italic;
+}
+
+ul:not([class="post"]) > li {
+    list-style: none;
+    text-indent: -1.4em;
+}
+
+ul:not([class="post"]) > li:not([class="post__menu"]):not([class="menu__item"])::before {
+    content: '\263A';
+    padding-right: 6px;
+    vertical-align: 1px;
 }
 
 .grafik {
