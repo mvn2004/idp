@@ -392,8 +392,7 @@ footer .copyright span:hover {
 
 @media only all and (max-width: 1200px) {
     .formatDate,
-    .links span,
-    .copyright {
+    .links span {
         display: inline;
         text-align: center;
     }
