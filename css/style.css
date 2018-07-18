@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic');
+@import url(//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic);
 
 body {
-    margin: 0;
+    margin: 0 0 0 10px;
     padding: 0;
-    min-width: 1238px;
+    /*min-width: 1238px;*/
     font-family: Roboto, sans-serif;
 }
 
@@ -14,7 +14,7 @@ header {
 }
 
 header img {
-    margin-top: 20px;
+    margin: 20px 0 0 0;
 }
 
 @keyframes scroll {
@@ -32,12 +32,12 @@ header img {
     position: absolute;
     top: 5px;
     right: 5px;
-    transition: 0.3s;
+    transition: .3s;
     animation: scroll 20s infinite linear;
 }
 
 #hours:hover {
-    color: #CC0001;
+    color: #C00;
 }
 
 @keyframes zoom {
@@ -45,14 +45,14 @@ header img {
         transform: scale(0);
     }
     to {
-        transform: scale(1)
+        transform: scale(1);
     }
 }
 
 h2 {
     color: #4A86E8;
     text-align: center;
-    transition: 0.3s;
+    transition: .3s;
     animation: zoom 1s;
 }
 
@@ -61,18 +61,18 @@ h2:hover {
 }
 
 aside img {
-    background-color: #4A86E8;
+    background: #4A86E8;
     position: fixed;
     z-index: 1;
     top: 420px;
-    left: 0;
-    opacity: 0.5;
-    transition: 0.3s;
+    left: 10;
+    opacity: .5;
+    transition: .3s;
 }
 
 aside img:hover {
     opacity: 1;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .3);
     transform: scale(1.1);
 }
 
@@ -82,22 +82,22 @@ table {
 }
 
 th {
-    background-color: #F8C76F;
+    background: #F8C76F;
     color: #4A86E8;
     font-size: 15px;
 }
 
 td {
-    background-color: #FEF8E3;
+    background: #FEF8E3;
     font-size: 14px;
     vertical-align: top;
 }
 
 th,
 td {
-    border: 1px solid #111111;
+    border: 1px solid #111;
     padding: 10px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 th:hover {
@@ -113,14 +113,14 @@ td:hover {
 
 th:hover,
 td:hover {
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .3);
 }
 
 #hours:hover,
 h2:hover,
 th:hover,
 td:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
     transform: translate(-3px, -3px);
 }
 
@@ -128,10 +128,9 @@ td:hover {
     text-align: center;
 }
 
-a:link {
-    color: #0000FF;
+a {
     text-decoration: none;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 a:vizited {
@@ -139,11 +138,11 @@ a:vizited {
 }
 
 a:hover {
-    color: #800000;
+    color: #800;
 }
 
 a:active {
-    color: #008000;
+    color: #080;
 }
 
 .photoI img {
@@ -153,7 +152,7 @@ a:active {
     z-index: 2;
     visibility: hidden;
     transform: scale(0);
-    transition: transform 0.5s ease-out;
+    transition: transform .5s ease-out;
 }
 
 .photoI:hover img {
@@ -166,25 +165,25 @@ a:active {
 }
 
 .post__menu {
-    color: #0000FF;
+    color: #00F;
     position: relative;
     text-decoration: none;
     cursor: pointer;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .post__menu:hover {
-    color: #800000;
+    color: #800;
 }
 
 .post__menu .menu {
-    color: #800000;
+    color: inherit;
     opacity: 0;
     position: absolute;
     list-style: none;
     text-align: left;
     top: -9999em;
-    transition: opacity 0.3s;
+    transition: opacity .3s;
 }
 
 .post__menu:hover .menu {
@@ -198,11 +197,11 @@ a:active {
 }
 
 .post__menu .menu .menu__link {
-    background-color: #F8C76F;
+    background: #F8C76F;
     padding: 6px 26px;
     display: block;
     text-decoration: none;
-    transition: 0.3s;
+    transition: .3s;
     text-indent: 0;
 }
 
@@ -210,8 +209,8 @@ a:active {
     padding: 8px 20px 8px 32px;
     /*background-color: #F8C76F;*/
     background: radial-gradient(at center, #FEF8E3, #F8C76F);
-    color: #800000;
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    color: inherit;
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .3);
 }
 
 .formatDate {
@@ -223,11 +222,11 @@ a:active {
 }
 
 .formatDate > p {
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .formatDate > p:hover {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
     transform: translate(-3px, -3px);
 }
 
@@ -251,7 +250,7 @@ a:active {
     z-index: 3;
     visibility: hidden;
     opacity: 0;
-    transition: 0.5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .cto:hover span {
@@ -261,13 +260,13 @@ a:active {
 
 ul {
     margin: 0;
-    padding-left: 1%;
+    padding: 0 0 0 1%;
     /*list-style-type: square;*/
     font-style: normal;
 }
 
 ul.project {
-    padding-left: 5%;
+    padding: 0 0 0 5%;
 }
 
 ul.certificate {
@@ -275,7 +274,7 @@ ul.certificate {
 }
 
 ul.metods {
-    padding-left: 6%;
+    padding: 0 0 0 6%;
 }
 
 ul:not([class="post"]) > li {
@@ -285,13 +284,13 @@ ul:not([class="post"]) > li {
 
 ul:not([class="post"]) > li:not([class="post__menu"]):not([class="menu__item"])::before {
     content: '\263A';
-    padding-right: 6px;
+    padding: 0 6px 0 0;
     vertical-align: 1px;
 }
 
 ol {
     margin: 0;
-    padding-left: 5%;
+    padding: 0 0 0 5%;
     font-style: italic;
     list-style-type: none;
     /* Убираем исходные маркеры */
@@ -316,10 +315,10 @@ li {
 }
 
 .grafik {
-    background-color: #FEF8E3;
+    background: #FEF8E3;
     text-align: center;
     width: 100%;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .grafik > a {
@@ -327,7 +326,7 @@ li {
 }
 
 .grafik:hover {
-    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .3);
     transform: translate(-3px, -3px);
 }
 
@@ -347,18 +346,18 @@ li {
     width: 230px;
     display: block;
     font-size: 14px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .links span:hover {
     font-size: 15px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
 .links img {
     width: 50px;
     height: 50px;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 .links img:hover {
@@ -366,14 +365,14 @@ li {
 }
 
 footer .copyright {
-    background-color: #F8C76F;
+    background: #F8C76F;
     height: 80px;
     font-weight: bold;
     color: #4A86E8;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transition: .3s;
 }
 
 footer .copyright:hover {
@@ -381,19 +380,21 @@ footer .copyright:hover {
 }
 
 footer .copyright span {
-    transition: 0.3s;
+    transition: .3s;
 }
 
 footer .copyright span:hover {
     color: #435F88;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
     transform: translate(-3px, -3px);
 }
 
 @media only all and (max-width: 1200px) {
+
     .formatDate,
     .links span {
         display: inline;
         text-align: center;
     }
+
 }
