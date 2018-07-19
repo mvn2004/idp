@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    /*min-width: 1238px;*/
+    min-width: 1238px;
     font-family: Roboto, sans-serif;
 }
 
@@ -332,7 +332,7 @@ li {
 
 .links {
     height: 80px;
-    min-width: 1238px;
+    /*min-width: 1238px;*/
     font-size: 14px;
     text-indent: 20px;
     text-align: center;
@@ -390,11 +390,9 @@ footer .copyright span:hover {
 }
 
 @media only all and (max-width: 1200px) {
-
+    /* Стиль для разрешения менее 1200px по ширине */
     .formatDate,
     .links span {
         display: inline;
         text-align: center;
     }
-
-}
