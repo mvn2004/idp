@@ -332,7 +332,7 @@ li {
 
 .links {
     height: 80px;
-    /*min-width: 1238px;*/
+    min-width: 1238px;
     font-size: 14px;
     text-indent: 20px;
     text-align: center;
@@ -395,4 +395,5 @@ footer .copyright span:hover {
     .links span {
         display: inline;
         text-align: center;
+        vertical-align: middle;
     }
