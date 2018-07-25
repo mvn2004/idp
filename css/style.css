@@ -396,3 +396,17 @@ footer .copyright span:hover {
         text-align: center;
         vertical-align: middle;
     }
+
+/*Адаптивная верстка*/
+/*
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+*/
+    
