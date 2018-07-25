@@ -27,7 +27,7 @@ header img {
 }
 
 #hours {
-    font: bold 16px Roboto, sans-serif;
+    font: bold 1em Roboto, sans-serif;
     color: #FA5F20;
     position: absolute;
     top: 5px;
@@ -84,12 +84,12 @@ table {
 th {
     background: #F8C76F;
     color: #4A86E8;
-    font-size: 15px;
+    font-size: .9375em;
 }
 
 td {
     background: #FEF8E3;
-    font-size: 14px;
+    font-size: .875em;
     vertical-align: top;
 }
 
@@ -215,7 +215,7 @@ a:active {
 
 .formatDate {
     padding: 10px 0;
-    font-size: 14px;
+    font-size: .875em;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -333,7 +333,7 @@ li {
 .links {
     height: 80px;
     min-width: 1238px;
-    font-size: 14px;
+    font-size: .875em;
     text-indent: 20px;
     text-align: center;
     display: flex;
@@ -345,12 +345,11 @@ li {
     margin: 0 0 0 -20px;
     width: 230px;
     display: block;
-    font-size: 14px;
     transition: .3s;
 }
 
 .links span:hover {
-    font-size: 15px;
+    font-size: 1.0714em;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
 }
 
