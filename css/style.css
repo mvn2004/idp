@@ -388,16 +388,8 @@ footer .copyright span:hover {
     transform: translate(-3px, -3px);
 }
 
-@media only all and (max-width: 1200px) {
-    /* Стиль для разрешения менее 1200px по ширине */
-    .formatDate,
-    .links span {
-        display: inline;
-        text-align: center;
-        vertical-align: middle;
-    }
+/* Адаптивная верстка */
 
-/*Адаптивная верстка*/
 /*
 .clear:before,
 .clear:after {
@@ -409,4 +401,35 @@ footer .copyright span:hover {
     clear: both;
 }
 */
-    
+
+/* flexible media */
+
+/*
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+img {
+    min-width: 100%;
+    height: auto;
+}
+*/
+
+@media only screen and (max-width: 1200px) {
+    /* Стиль для разрешения менее 1200px по ширине */
+    .formatDate,
+    .links span {
+        display: inline;
+        text-align: center;
+        vertical-align: middle;
+    }
