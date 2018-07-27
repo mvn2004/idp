@@ -3,25 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Мета-теги для браузеров http-equiv:
-    <meta http-equiv="refresh" content="4; url=//www.google.com.ua/"> переброска через 4с на страницу Google;
-    <meta http-equiv="pragma" content="no-cache"> запрет кэширования страницы; -->
+    <!-- Переброска через 4с на страницу Google: -->
+    <!-- <meta http-equiv="refresh" content="4; url=//www.google.com.ua/"> -->
+    <!-- Запрет кэширования страницы: -->
+    <!-- <meta http-equiv="pragma" content="no-cache"> -->
     
-    <!-- Адаптивная верстка:
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
-   
+    <!-- Новые теги в старых браузерах: -->
     <!--[if lt IE 9]>
         <script>
-            var e = ("aside,footer,header,nav,time").split(',');
+            var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
                 for (var i = 0; i < e.length; i++) {
                 document.createElement(e[i]);
                 }
         </script>
+	<![endif]-->
+
+    <!-- Адаптивная верстка: -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
 	<![endif]-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -33,7 +35,7 @@
 <body>
     <header>
         <img src="images/idp.jpg" alt="IDP">
-        <h2><p>Индивидуальный план развития на 2018&nbsp;г.</p></h2>
+        <h2>Индивидуальный план развития на 2018&nbsp;г.</h2>
         <div id="hours">
             <script async src="js/time.js"></script>
         </div>

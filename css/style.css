@@ -418,7 +418,7 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-width: 1200px) {
-    /* Стиль для разрешения менее 1200px по ширине */
+    /* Стиль для разрешения экрана менее 1200px по ширине */
     .formatDate,
     .links span {
         display: inline;
@@ -428,7 +428,7 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-width: 900px) {
-    /* Стиль для разрешения менее 768px по ширине */
+    /* Стиль для разрешения экрана менее 768px по ширине */
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
     .table2 th:nth-child(5),
@@ -438,7 +438,19 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Стиль для разрешения менее 768px по ширине */
+    /* Стиль для разрешения экрана менее 768px по ширине */
+    .table1 th:last-child,
+    .table1 td:last-child,
+    .table2 th:nth-child(odd),
+    .table2 td:nth-child(odd) {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 768px) {
+    /* Стиль для разрешения смартфона менее 768px по ширине */
+    .table1 th:nth-child(4),
+    .table1 td:nth-child(4),
     .table1 th:last-child,
     .table1 td:last-child,
     .table2 th:nth-child(odd),
@@ -448,6 +460,15 @@ footer .copyright span:hover {
 }
 
 /* Адаптивная верстка */
+
+/*
+@viewport {
+	width: device-width;
+	}
+@-ms-viewport {
+	width: device-width;
+	}
+*/
 
 /*
 .clear:before,
