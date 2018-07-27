@@ -3,17 +3,17 @@
 body {
     margin: 0;
     padding: 0;
-    /*    min-width: 1238px;*/
+    /* min-width: 1238px; */
     font-family: Roboto, sans-serif;
 }
 
 header {
-    /*    width: 100%;*/
+    /* width: 100%; */
     text-align: center;
 }
 
 header img {
-    margin: 20px 0 0 0;
+    margin: 20px 0 10px;
     max-width: 100%;
 }
 
@@ -79,6 +79,8 @@ h2 {
     text-align: center;
     transition: .3s;
     animation: zoom 1s;
+    margin: 0;
+    padding: 0 0 20px 0;
 }
 
 h2:hover {
@@ -425,12 +427,19 @@ footer .copyright span:hover {
         text-align: center;
         vertical-align: middle;
     }
+    
+    .table2 th:first-child,
+    .table2 td:first-child {
+        display: none;
+    }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 960px) {
     /* Стиль для разрешения экрана менее 768px по ширине */
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
+    .table2 th:first-child,
+    .table2 td:first-child,
     .table2 th:nth-child(5),
     .table2 td:nth-child(5) {
         display: none;
