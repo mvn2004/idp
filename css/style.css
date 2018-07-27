@@ -3,19 +3,44 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1238px;
+    /*    min-width: 1238px;*/
     font-family: Roboto, sans-serif;
 }
 
 header {
-    height: 420px;
-    width: 100%;
+    /*    width: 100%;*/
     text-align: center;
 }
 
 header img {
     margin: 20px 0 0 0;
+    max-width: 100%;
 }
+
+/* flexible media - начало */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+/*
+img {
+    max-width: 100%;
+    height: auto;
+}
+*/
+
+/* flexible media - конец */
 
 @keyframes scroll {
     0% {
@@ -330,9 +355,13 @@ li {
     transform: translate(-3px, -3px);
 }
 
+.grafik img {
+    max-width: 100%;
+}
+
 .links {
     height: 80px;
-    min-width: 1238px;
+    /*    min-width: 1238px;*/
     font-size: .875em;
     text-indent: 20px;
     text-align: center;
@@ -388,43 +417,6 @@ footer .copyright span:hover {
     transform: translate(-3px, -3px);
 }
 
-/* Адаптивная верстка */
-
-/*
-.clear:before,
-.clear:after {
-    content: " ";
-    display: table;
-}
-
-.clear:after {
-    clear: both;
-}
-*/
-
-/* flexible media */
-
-/*
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-}
-
-img {
-    min-width: 100%;
-    height: auto;
-}
-*/
-
 @media only screen and (max-width: 1200px) {
     /* Стиль для разрешения менее 1200px по ширине */
     .formatDate,
@@ -433,3 +425,37 @@ img {
         text-align: center;
         vertical-align: middle;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    /* Стиль для разрешения менее 768px по ширине */
+    .table1 th:nth-child(4),
+    .table1 td:nth-child(4),
+    .table2 th:nth-child(5),
+    .table2 td:nth-child(5) {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Стиль для разрешения менее 768px по ширине */
+    .table1 th:last-child,
+    .table1 td:last-child,
+    .table2 th:nth-child(odd),
+    .table2 td:nth-child(odd) {
+        display: none;
+    }
+}
+
+/* Адаптивная верстка */
+
+/*
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+.clear:after {
+    clear: both;
+}
+*/
