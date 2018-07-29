@@ -57,8 +57,8 @@ img {
     position: absolute;
     top: 5px;
     right: 5px;
-    transition: .3s;
     animation: scroll 20s infinite linear;
+    transition: .3s;
 }
 
 #hours:hover {
@@ -75,15 +75,19 @@ img {
 }
 
 h2 {
-    color: #4A86E8;
-    text-align: center;
-    transition: .3s;
-    animation: zoom 1s;
     margin: 0;
     padding: 0 0 20px 0;
 }
 
-h2:hover {
+h2 span {
+    color: #4A86E8;
+    text-align: center;
+    animation: zoom 1s;
+    transition: .3s;
+    display: inline-block;
+}
+
+h2 span:hover {
     color: #435F88;
 }
 
@@ -144,7 +148,7 @@ td:hover {
 }
 
 #hours:hover,
-h2:hover,
+h2 span:hover,
 th:hover,
 td:hover {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
