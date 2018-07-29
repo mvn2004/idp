@@ -155,7 +155,8 @@ td:hover {
     transform: translate(-3px, -3px);
 }
 
-.cell {
+.table1 td:first-child,
+.table2 td:nth-child(odd) {
     text-align: center;
 }
 
