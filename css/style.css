@@ -3,12 +3,12 @@
 body {
     margin: 0;
     padding: 0;
-    /* min-width: 1238px; */
+    /*min-width: 1238px;*/
     font-family: Roboto, sans-serif;
 }
 
 header {
-    /* width: 100%; */
+    /*width: 100%;*/
     text-align: center;
 }
 
@@ -17,7 +17,7 @@ header img {
     max-width: 100%;
 }
 
-/* flexible media - начало */
+/*flexible media - начало*/
 
 article,
 aside,
@@ -40,7 +40,7 @@ img {
 }
 */
 
-/* flexible media - конец */
+/*flexible media - конец*/
 
 @keyframes scroll {
     0% {
@@ -134,12 +134,17 @@ td {
 th:hover {
     /*background-color: rgba(220, 130, 0, 0.4);*/
     background: radial-gradient(at center, #FEEBC8, #F8C76F);
+    border-bottom: 1px solid transparent;
+    border-top: transparent;
     color: #435F88;
 }
 
 td:hover {
     /*background-color: rgba(248, 199, 111, 0.4);*/
-    background: radial-gradient(at center, #FEF8E3, #FEEBC8);
+    /*background: radial-gradient(at center, #FEF8E3, #FEEBC8);*/
+    background: radial-gradient(at center, #FFF, #FEF8E3);
+    border-bottom: 1px solid transparent;
+    border-top: transparent;
 }
 
 th:hover,
@@ -325,17 +330,17 @@ ol {
     padding: 0 0 0 5%;
     font-style: italic;
     list-style-type: none;
-    /* Убираем исходные маркеры */
+    /*Убираем исходные маркеры*/
     counter-reset: item;
-    /* Обнуляем счетчик списка */
+    /*Обнуляем счетчик списка*/
     text-indent: -1.1em;
 }
 
 ol > li::before {
     content: counter(item) ') ';
-    /* Добавляем к числам скобку */
+    /*Добавляем к числам скобку*/
     counter-increment: item;
-    /* Задаём имя счетчика */
+    /*Задаём имя счетчика*/
 }
 
 ol > li {
@@ -368,7 +373,7 @@ li {
 
 .links {
     height: 80px;
-    /*    min-width: 1238px;*/
+    /*min-width: 1238px;*/
     font-size: .875em;
     text-indent: 20px;
     text-align: center;
@@ -399,7 +404,7 @@ li {
     transform: scale(1.2);
 }
 
-footer .copyright {
+.copyright {
     background: #F8C76F;
     height: 80px;
     font-weight: bold;
@@ -410,29 +415,29 @@ footer .copyright {
     transition: .3s;
 }
 
-footer .copyright:hover {
+.copyright:hover {
     background: radial-gradient(at center, #FEEBC8, #F8C76F);
 }
 
-footer .copyright span {
+.copyright span {
     transition: .3s;
 }
 
-footer .copyright span:hover {
+.copyright span:hover {
     color: #435F88;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, .3);
     transform: translate(-3px, -3px);
 }
 
 @media only screen and (max-width: 1200px) {
-    /* Стиль для разрешения экрана менее 1200px по ширине */
+    /*Стиль для разрешения экрана менее 1200px по ширине*/
     .formatDate,
     .links span {
         display: inline;
         text-align: center;
         vertical-align: middle;
     }
-    
+
     .table2 th:first-child,
     .table2 td:first-child {
         display: none;
@@ -440,7 +445,7 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-width: 960px) {
-    /* Стиль для разрешения экрана менее 768px по ширине */
+    /*Стиль для разрешения экрана менее 768px по ширине*/
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
     .table2 th:first-child,
@@ -452,7 +457,7 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-width: 768px) {
-    /* Стиль для разрешения экрана менее 768px по ширине */
+    /*Стиль для разрешения экрана менее 768px по ширине*/
     .table1 th:last-child,
     .table1 td:last-child,
     .table2 th:nth-child(odd),
@@ -462,7 +467,7 @@ footer .copyright span:hover {
 }
 
 @media only screen and (max-device-width: 768px) {
-    /* Стиль для разрешения смартфона менее 768px по ширине */
+    /*Стиль для разрешения смартфона менее 768px по ширине*/
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
     .table1 th:last-child,
@@ -473,7 +478,7 @@ footer .copyright span:hover {
     }
 }
 
-/* Адаптивная верстка */
+/*Адаптивная верстка*/
 
 /*
 @viewport {
