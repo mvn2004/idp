@@ -292,21 +292,21 @@ a:active {
 
 ul {
     margin: 0;
-    padding: 0 0 0 1%;
+    padding: 0;
     /*list-style-type: square;*/
     font-style: normal;
 }
 
 ul.project {
-    padding: 0 0 0 5%;
+    padding: 0 0 0 6%;
 }
 
 ul.certificate {
-    padding: 5px 0 0 4%;
+    padding: 5px 0 0 5%;
 }
 
 ul.metods {
-    padding: 0 0 0 6%;
+    padding: 0 0 0 5%;
 }
 
 ul:not([class="post"]) > li {
