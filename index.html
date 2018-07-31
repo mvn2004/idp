@@ -3,47 +3,62 @@
 
 <head>
     <meta charset="UTF-8">
+    
     <!-- Переброска через 4с на страницу Google: -->
     <!-- <meta http-equiv="refresh" content="4; url=//www.google.com.ua/"> -->
+    
     <!-- Запрет кэширования страницы: -->
     <!-- <meta http-equiv="pragma" content="no-cache"> -->
     
     <!-- Новые теги в старых браузерах: -->
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9]>
         <script>
             var e = ("article,aside,figcaption,figure,footer,header,hgroup,nav,section,time").split(',');
                 for (var i = 0; i < e.length; i++) {
                 document.createElement(e[i]);
                 }
         </script>
-	<![endif]-->
+	<![endif] -->
+   
+    <!-- Подключение библиотек для совместимости со старыми браузерами: -->
+    <!-- [if lt IE 9]>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-sham.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.3.2/json3.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-shim.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/es6-shim/0.34.2/es6-sham.min.js"></script>
+        <script src="//wzrd.in/standalone/es7-shim@latest"></script>
+	<![endif] -->
 
     <!-- Адаптивная верстка: -->
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
+    <!-- [if lt IE 9]>
         <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-	<![endif]-->
+	<![endif] -->
+   
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>ИПР Миронович В.Н.</title>
+    <script async src="js/time.js"></script>
     <script async src="js/title.js"></script>
     <script async src="js/title2.js"></script>
+    <script async src="js/changeColor.js"></script>
 </head>
 
 <body>
     <header>
-        <img src="images/idp.jpg" alt="IDP">
-        <h2><span>Индивидуальный план развития на 2018&nbsp;г.</span></h2>
         <div id="hours">
-            <script async src="js/time.js"></script>
+            <!-- <script async src="js/time.js"></script> -->
         </div>
         <!-- <audio autoplay loop>
             <source src="files/gimn_programmistov_1c.mp3" type="audio/mpeg">
             Тег audio не поддерживается вашим браузером. 
             <a href="files/gimn_programmistov_1c.mp3">Скачайте музыку</a>.
         </audio> -->
+        <img src="images/idp.jpg" alt="IDP">
+        <h2><span>Индивидуальный план развития на 2018&nbsp;г.</span></h2>
     </header>
     <aside>
         <a href="//med-star.bitrix24.ua/company/personal/user/170/" target="_blank"><img src="images/bitrix24.jpg" alt="med-star.bitrix24.ua" title="Моя страница на med-star.bitrix24.ua"></a>
@@ -255,7 +270,7 @@
                 <tr>
                     <td>4</td>
                     <td>Изучение принципов построения бекэнда и серверных технологий</td>
-                    <td class="cellDate">31.07.2018</td>
+                    <td class="cellDate">31.08.2018</td>
                     <td>Понимание использования серверных языков в веб-разработке; навыки работы с базами данных и языком запросов.</td>
                     <td><a href="images/anton.jpg" class="cto" title="Исполнительный директор ООО&nbsp;«Медстар&nbsp;Солюшенс»">Иванкин&nbsp;А.А.<span><img src="images/anton.jpg" alt="cto"></span></a></td>
                     <td>Бесплатные online-курсы и вебинары (back-end developer):
@@ -361,7 +376,7 @@
             </script> Миронович В.Н.</span>
         </div>
     </footer>
-    <script src="js/changeColor.js"></script>
+    <!-- <script src="js/changeColor.js"></script> -->
 </body>
 
 </html>
