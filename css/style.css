@@ -341,16 +341,17 @@ ul {
     font-style: normal;
 }
 
-ul.project {
-    padding: 0 0 0 6%;
+ul.project,
+ul.metods {
+    padding: 0 0 0 5%;
 }
 
 ul.certificate {
-    padding: 5px 0 0 5%;
+    padding: 5px 0 0 4%;
 }
 
-ul.metods {
-    padding: 0 0 0 5%;
+ul.cms {
+    padding: 5px 0 0 8%;
 }
 
 ul:not([class="post"]) > li {
