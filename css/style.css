@@ -1,5 +1,8 @@
 @import url(//fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic);
 
+@import
+url(//fonts.googleapis.com/css?family=Fredoka+One);
+
 /* Глобальные переменные (не работают в старых брузерах, как и локальные!) */
 
 /*
@@ -42,6 +45,67 @@ img {
 
 /* flexible media - конец */
 
+header {
+    /* width: 100%; */
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-510%);
+    }
+}
+
+header #hours {
+    font: bold 1em Roboto, sans-serif;
+    color: #FA5F20;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 1;
+    animation: scroll 20s infinite linear;
+    transition: .3s;
+}
+
+header #hours:hover {
+    color: #C00;
+}
+
+@keyframes scrollPlan {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(510%);
+    }
+}
+
+header .plan {
+    font: 3.6em 'Fredoka One', cursive;
+    opacity: .1;
+    position: fixed;
+    top: -3%;
+    z-index: 2;
+}
+
+header .plan p:first-child {
+    color: #435F88;
+    animation: scrollPlan 25s infinite linear;
+}
+
+header .plan p:nth-child(2) {
+    color: #FA5F20;
+    animation: scrollPlan 30s infinite linear;
+}
+
+header .plan p:last-child {
+    color: #C00;
+    animation: scrollPlan 35s infinite linear;
+}
+
 @keyframes swipe {
     0% {
         transform: translateX(0%);
@@ -60,41 +124,13 @@ img {
     }
 }
 
-header {
-    /* width: 100%; */
-    text-align: center;
-}
-
 header img {
     margin: 20px 0 10px;
     max-width: 100%;
 }
 
 header img:hover {
-    animation: swipe .5s linear;
-}
-
-@keyframes scroll {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-510%);
-    }
-}
-
-#hours {
-    font: bold 1em Roboto, sans-serif;
-    color: #FA5F20;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    animation: scroll 20s infinite linear;
-    transition: .3s;
-}
-
-#hours:hover {
-    color: #C00;
+    /* animation: swipe .5s linear; */
 }
 
 @keyframes zoom {
@@ -126,7 +162,7 @@ h2 span:hover {
 aside img {
     /* background: #2D5C6D; */
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 420px;
     left: 0;
     opacity: .5;
@@ -218,7 +254,7 @@ a:active {
     left: 0;
     top: 100px;
     position: absolute;
-    z-index: 2;
+    z-index: 4;
     visibility: hidden;
     transform: scale(0);
     transition: transform .5s ease-out;
@@ -322,8 +358,8 @@ a:active {
     left: -580px;
     top: -2px;
     position: absolute;
-    width: 0%;
-    z-index: 3;
+    /* width: 0%;*/
+    z-index: 5;
     visibility: hidden;
     opacity: 0;
     transition: .5s ease-in-out;
@@ -471,6 +507,10 @@ li {
 
 @media only screen and (max-width: 1200px) {
     /* Стиль для разрешения экрана менее 1200px по ширине */
+    header .plan {
+        display: none;
+    }
+    
     .formatDate,
     .links span {
         display: inline;
