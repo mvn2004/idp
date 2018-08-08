@@ -84,10 +84,10 @@ header #hours:hover {
 }
 
 header .plan {
-    font: 3.6em 'Fredoka One', cursive;
+    font: 3.5em/.5em 'Fredoka One', cursive;
     opacity: .1;
-    position: fixed;
-    top: -3%;
+    position: absolute;
+    top: -2%;
     z-index: 2;
 }
 
@@ -98,11 +98,13 @@ header .plan p:first-child {
 
 header .plan p:nth-child(2) {
     color: #FA5F20;
+    font-size: 1.5em;
     animation: scrollPlan 30s infinite linear;
 }
 
 header .plan p:last-child {
     color: #C00;
+    font-size: 2em;
     animation: scrollPlan 35s infinite linear;
 }
 
@@ -125,7 +127,7 @@ header .plan p:last-child {
 }
 
 header img {
-    margin: 20px 0 10px;
+    margin: 30px 0 10px;
     max-width: 100%;
 }
 
@@ -142,6 +144,15 @@ header img:hover {
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotateY(0deg);
+    }
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+
 h2 {
     margin: 0;
     padding: 0 0 20px 0;
@@ -150,7 +161,8 @@ h2 {
 h2 span {
     color: #4A86E8;
     text-align: center;
-    animation: zoom 1s;
+    animation: zoom 2s;
+    /* animation: rotate 2s; */
     transition: .3s;
     display: inline-block;
 }
@@ -163,7 +175,7 @@ aside img {
     /* background: #2D5C6D; */
     position: fixed;
     z-index: 3;
-    top: 420px;
+    top: 430px;
     left: 0;
     opacity: .5;
     transition: .3s;
@@ -508,7 +520,8 @@ li {
 @media only screen and (max-width: 1200px) {
     /* Стиль для разрешения экрана менее 1200px по ширине */
     header .plan {
-        display: none;
+        top: -1%;
+        font-size: 2.8em;
     }
     
     .formatDate,
@@ -526,6 +539,11 @@ li {
 
 @media only screen and (max-width: 960px) {
     /* Стиль для разрешения экрана менее 768px по ширине */
+    header .plan {
+        top: auto;
+        font-size: 2.1em;
+    }
+    
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
     .table2 th:first-child,
@@ -538,6 +556,11 @@ li {
 
 @media only screen and (max-width: 768px) {
     /* Стиль для разрешения экрана менее 768px по ширине */
+    header .plan {
+        top: 1%;
+        font-size: 1.4em;
+    }
+    
     .table1 th:last-child,
     .table1 td:last-child,
     .table2 th:nth-child(odd),
@@ -548,6 +571,10 @@ li {
 
 @media only screen and (max-device-width: 768px) {
     /* Стиль для разрешения смартфона менее 768px по ширине */
+    header .plan {
+         display: none; 
+    }
+    
     header #hours,
     h2 span {
         animation: none;
