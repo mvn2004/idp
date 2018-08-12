@@ -66,7 +66,7 @@ header #hours {
     top: 5px;
     right: 5px;
     z-index: 1;
-    animation: scroll 20s infinite linear;
+    animation: scroll 25s infinite linear;
     transition: .3s;
 }
 
@@ -586,6 +586,7 @@ li {
         animation: none;
     }
     
+    header #hours,
     header .plan,
     .table1 th:nth-child(4),
     .table1 td:nth-child(4),
