@@ -581,11 +581,11 @@ li {
 
 @media only screen and (max-device-width: 768px) {
   /* Стиль для разрешения смартфона менее 768px по ширине */
+  header #hours,
   h2 span {
     animation: none;
   }
 
-  header #hours,
   header .plan,
   .table1 th:nth-child(4),
   .table1 td:nth-child(4),
