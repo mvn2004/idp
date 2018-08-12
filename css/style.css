@@ -83,7 +83,7 @@ header #hours:hover {
 }
 
 header .plan {
-  font: 3.5em/.5em 'Fredoka One', cursive;
+  font: 3.5em/.5em 'Fredoka One';
   opacity: .1;
   position: absolute;
   top: -2%;
