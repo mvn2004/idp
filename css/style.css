@@ -399,9 +399,8 @@ ul {
   font-style: normal;
 }
 
-ul.project,
-ul.metods {
-  padding: 0 0 0 5%;
+ul.project {
+  padding: 0 0 0 4.5%;
 }
 
 ul.certificate {
