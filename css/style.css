@@ -583,6 +583,7 @@ li {
 @media only screen and (max-device-width: 768px) {
   /* Стиль для разрешения смартфона менее 768px по ширине */
   header #hours,
+  header div h2,
   h2 span {
     animation: none;
   }
