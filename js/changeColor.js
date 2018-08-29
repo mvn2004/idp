@@ -1,13 +1,13 @@
 "use strict";
 
-var today = new Date();
+var date = new Date();
+var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
 var datesStr = document.getElementsByClassName("cellDate");
 
 //Изменение цвета шрифта от даты
 function changeColor() {
-  var dateStrLen = datesStr.length;
 
-  for (var i = 0; i < dateStrLen; i++) {
+  for (var i = 0; i < datesStr.length; i++) {
     // for (let dateStr of datesStr) { // только для Chrome & Firefox
     var date = new Date(datesStr[i].innerText.replace(/(\d+).(\d+).(\d+)/, '$3/$2/$1'));
 
