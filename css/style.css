@@ -183,6 +183,15 @@ h2 span:hover {
   color: #435F88;
 }
 
+header #RP_v2_radio {
+  position: fixed;
+  left: 0;
+  top: 406px;
+  z-index: 5;
+  opacity: .5;
+  transition: .3s;
+}
+
 aside img {
   /* background: #2D5C6D; */
   position: fixed;
@@ -193,7 +202,8 @@ aside img {
   transition: .3s;
 }
 
-aside img:hover {
+aside img:hover,
+header #RP_v2_radio:hover {
   opacity: 1;
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .3);
   transform: scale(1.1);
