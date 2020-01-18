@@ -12,7 +12,7 @@ var docInfo = {
 
   footer: function (currentPage, pageCount) {
     return {
-      text: currentPage.toString() + 'из' + pageCount,
+      text: currentPage.toString() + ' из ' + pageCount,
       alignment: 'right',
       margin: [0, 30, 50, 50]
     }
