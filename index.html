@@ -44,6 +44,9 @@
   <title>ИПР Миронович В.Н.</title>
   <script async src="js/title.js"></script>
   <script async src="js/title2.js"></script>
+  <script async src="js/pdfmake.min.js"></script>
+  <script async src="js/vfs_fonts.js"></script>
+  <script async src="js/html2pdf.js"></script>
 </head>
 
 <body>
@@ -454,10 +457,14 @@
   
   <footer>
     <nav class="links">
-      <a href="files/MironovichVNidp2018-2019.pdf" target="_blank"><img src="images/pdf.png" alt="pdf" title="Скачать этот документ в формате PDF"></a>
-      <a href="files/MironovichVNidp2018-2019.pdf" target="_blank"><span>Скачать в формате PDF</span></a>
+<!--
+      <a href="files/MironovichVNidp2018-2019.pdf" target="_blank"><img src="images/pdf.png" alt="pdf" title="Открыть этот документ в формате PDF"></a>
+      <a href="files/MironovichVNidp2018-2019.pdf" target="_blank"><span>Открыть в формате PDF</span></a>
+-->
+      <a href="#" onclick="pdfMake.createPdf(docInfo).open(); return false;" target="_blank"><img src="images/pdf.png" alt="pdf" title="Открыть этот документ в формате PDF"></a>
+      <a href="#" onclick="pdfMake.createPdf(docInfo).open(); return false;" target="_blank"><span>Открыть в формате PDF</span></a>
       <a href="//docs.google.com/spreadsheets/d/1713a0rGWschifC8T9xxGJEpv3y--Qb7g5_nghZ7fctg/edit#gid=0" target="_blank"><img src="images/excel.png" alt="excel" title="Перейти на страницу Google Таблицы"></a>
-      <a href="//docs.google.com/spreadsheets/d/1713a0rGWschifC8T9xxGJEpv3y--Qb7g5_nghZ7fctg/edit#gid=0" target="_blank"><span>Перейти в Google Таблицы</span></a>
+      <a href="//docs.google.com/spreadsheets/d/1713a0rGWschifC8T9xxGJEpv3y--Qb7g5_nghZ7fctg/edit#gid=0" target="_blank"><span>Открыть в Google Таблицах</span></a>
       <a href="#"><img src="images/up.png" alt="up" title="Перейти к началу страницы"></a>
       <a href="#"><span>Перейти вверх страницы</span></a>
       <a href="mailto:mvn2004@mail.ru?subject=Вопрос%20по%20ИПР"><img src="images/addressbookedit.png" alt="addressbookedit" title="Связаться с автором по e-mail"></a>
