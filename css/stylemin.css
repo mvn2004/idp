@@ -44,9 +44,9 @@ aside img:hover,header #RP_v2_radio:hover{opacity:1;box-shadow:2px 2px 5px 2px r
 table{border-collapse:collapse;width:100%}
 th{background:#F8C76F;color:#4A86E8;font-size:.9375em}
 td{background:#FEF8E3;font-size:.875em;vertical-align:top}
-th,td{border:1px solid #111;padding:10px;transition:.3s}
-th:hover{background:radial-gradient(at center,#FEEBC8,#F8C76F);border-bottom:1px solid transparent;border-top:transparent;color:#435F88}
-td:hover{background:radial-gradient(at center,#FFF,#FEF8E3);border-bottom:1px solid transparent;border-top:transparent}
+th,td{padding:10px;transition:.3s}
+th:hover{background:radial-gradient(at center,#FEEBC8,#F8C76F);color:#435F88}
+td:hover{background:radial-gradient(at center,#FFF,#FEF8E3);}
 th:hover,td:hover{box-shadow:2px 2px 5px 2px rgba(0,0,0,.3)}
 #hours:hover,h2 span:hover,th:hover,td:hover{text-shadow:2px 2px 5px rgba(0,0,0,.3);transform:translate(-3px,-3px)}
 .table1 td:first-child,.table2 td:nth-child(odd){text-align:center}

@@ -230,7 +230,7 @@ td {
 
 th,
 td {
-  border: 1px solid #111;
+/*  border: 1px solid #111;*/
   padding: 10px;
   transition: .3s;
 }
@@ -238,8 +238,8 @@ td {
 th:hover {
   /* background-color: rgba(220, 130, 0, 0.4); */
   background: radial-gradient(at center, #FEEBC8, #F8C76F);
-  border-bottom: 1px solid transparent;
-  border-top: transparent;
+/*  border-bottom: 1px solid transparent;*/
+/*  border-top: transparent;*/
   color: #435F88;
 }
 
@@ -247,8 +247,8 @@ td:hover {
   /* background-color: rgba(248, 199, 111, 0.4); */
   /* background: radial-gradient(at center, #FEF8E3, #FEEBC8); */
   background: radial-gradient(at center, #FFF, #FEF8E3);
-  border-bottom: 1px solid transparent;
-  border-top: transparent;
+/*  border-bottom: 1px solid transparent;*/
+/*  border-top: transparent;*/
 }
 
 th:hover,
