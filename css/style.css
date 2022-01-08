@@ -245,7 +245,7 @@ th:hover {
 
 td:hover {
   /* background-color: rgba(248, 199, 111, 0.4); */
-  /* background: radial-gradient(at center, #FEF8E3, #FEEBC8); */
+/*   background: radial-gradient(at center, #FEF8E3, #FEEBC8); */
   background: radial-gradient(at center, #FFF, #FEF8E3);
 /*  border-bottom: 1px solid transparent;*/
 /*  border-top: transparent;*/
